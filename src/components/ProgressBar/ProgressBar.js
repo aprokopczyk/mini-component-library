@@ -35,6 +35,10 @@ const ProgressBar = ({value, size}) => {
     }
 
     return <Wrapper
+        role="progressbar"
+        aria-valuenow={value}
+        aria-valuemin="0"
+        aria-valuemax="100"
         style={{
             '--padding': styles.padding + 'px',
             '--radius': styles.radius + 'px',
